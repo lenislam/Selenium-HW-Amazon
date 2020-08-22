@@ -1,4 +1,4 @@
-package amazan;
+package practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -37,23 +37,23 @@ public class FreeShipping {
         driver.close();
 
 //TestCase#2
-//        String chromeDriver1="webdriver.chrome.driver";
-//        String chromeDriverPath1="lib\\browser\\chromedriver.exe";
-//        String url1="https://www.amazon.com/";
-//        String freeShipping="//*[@id=\"nav-xshop\"]/a[8]";
-////        String ActualText="//*[@id=\"nav-swmslot\"]/a";
-////        String ecpectedText= "\"Free Shipping landed page\"";
-//
-//        System.setProperty(chromeDriver1, chromeDriverPath1);
-//        WebDriver driver1 = new ChromeDriver();
-//        driver1.get(url1);
-//        driver1.manage().window().fullscreen();
-//        driver1.findElement(By.xpath(freeShipping)).click();
+        String chromeDriver1="webdriver.chrome.driver";
+        String chromeDriverPath1="lib\\browser\\chromedriver.exe";
+        String url1="https://www.amazon.com/";
+        String freeShipping="//*[@id=\"nav-xshop\"]/a[8]";
+//        String ActualText="//*[@id=\"nav-swmslot\"]/a";
+//        String ecpectedText= "\"Free Shipping landed page\"";
+
+        System.setProperty(chromeDriver1, chromeDriverPath1);
+        WebDriver driver1 = new ChromeDriver();
+        driver1.get(url1);
+        driver1.manage().window().fullscreen();
+        driver1.findElement(By.xpath(freeShipping)).click();
+        Thread.sleep(3000);
+//        driver2.findElement(By.xpath(smartSpeakerActualText)).getText();
+//        Assert.assertEquals(ActualText,ecpectedText);
 //        Thread.sleep(3000);
-////        driver2.findElement(By.xpath(smartSpeakerActualText)).getText();
-////        Assert.assertEquals(ActualText,ecpectedText);
-////        Thread.sleep(3000);
-//        driver1.close();
+        driver1.close();
 
 //TestCase3
 //        String chromeDriver2="webdriver.chrome.driver";
